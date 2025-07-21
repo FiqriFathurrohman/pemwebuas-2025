@@ -9,9 +9,6 @@
     </div>
 
     <div class="d-flex justify-content-between align-items-center mb-1">
-        <a href="{{ url('/') }}" class="btn btn-outline-primary">
-            <i class="bi bi-house-door"></i> Home
-        </a>
         <a href="{{ route('transactions.create') }}" class="btn btn-success">
             <i class="bi bi-plus-circle"></i> Tambah Transaksi
         </a>
