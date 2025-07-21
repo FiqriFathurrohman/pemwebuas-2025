@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TransactionController;
 use Livewire\Livewire;
 
 /* NOTE: Do Not Remove
@@ -16,6 +17,9 @@ Livewire::setScriptRoute(function ($handle) {
 /*
 / END
 */
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('transactions.index');
 });
+
+Route::resource('transactions', TransactionController::class);
