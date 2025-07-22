@@ -3,9 +3,9 @@
 @section('content')
 <div class="container py-1">
     <div class="text-center mb-2">
-        <img src="{{ asset('images/washcar.png') }}" alt="Logo" class="img-fluid mb-1" style="max-width: 250px;">
-        <h2 class="fw-bold text-primary">Manajemen Transaksi WashCar</h2>
-        <p class="text-muted mb-2">Kelola & pantau transaksi harian cuci mobil Anda dengan mudah</p>
+        <img src="{{ asset('images/logo1.png') }}" alt="Logo" class="img-fluid mb-1" style="max-width: 250px;">
+        <h2 class="fw-bold text-primary">Manajemen Transaksi AirClenz </h2>
+        <p class="text-muted mb-2">Kelola & pantau transaksi harian cuci mobil AC Anda dengan mudah</p>
     </div>
 
     <div class="d-flex justify-content-between align-items-center mb-1">
@@ -25,7 +25,7 @@
                     <input type="text" name="customer_name" value="{{ request('customer_name') }}" class="form-control" placeholder="Cari Nama Customer">
                 </div>
                 <div class="col-md-3">
-                    <label class="form-label">Nomor Kendaraan</label>
+                    <label class="form-label">Alamat Rumah</label>
                     <input type="text" name="vehicle_number" value="{{ request('vehicle_number') }}" class="form-control" placeholder="Cari Nomor Kendaraan">
                 </div>
                 <div class="col-md-2">
@@ -60,8 +60,8 @@
                     <tr>
                         <th>#</th>
                         <th>Customer</th>
-                        <th>No Kendaraan</th>
-                        <th>Kategori</th>
+                        <th>Alamat Rumah</th>
+                        <th>Tipe AC</th>
                         <th>Harga</th>
                         <th>Tanggal</th>
                         <th class="text-center">Aksi</th>
